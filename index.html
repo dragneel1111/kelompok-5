@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Matematika</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Matematika</h1>
+
+        <!-- Kalkulator Teorema Binomial -->
+        <div class="calculator">
+            <h2>Kalkulator Teorema Binomial</h2>
+            <div class="input-field">
+                <label for="binomialA">Masukkan a:</label>
+                <input type="text" id="binomialA">
+            </div>
+            <div class="input-field">
+                <label for="binomialB">Masukkan b:</label>
+                <input type="text" id="binomialB">
+            </div>
+            <div class="input-field">
+                <label for="binomialN">Masukkan n:</label>
+                <input type="number" id="binomialN">
+            </div>
+            <button id="binomialButton">Hitung</button>
+            <table id="binomialResult">
+                <thead>
+                    <tr>
+                        <th>Koefisien</th>
+                        <th>a^k</th>
+                        <th>b^(n-k)</th>
+                        <th>Suku</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Hasil akan ditampilkan di sini -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Kalkulator FPB dan KPK -->
+        <div class="calculator">
+            <h2>Kalkulator FPB dan KPK</h2>
+            <div class="input-field">
+                <label for="fpbKpkA">Bilangan 1:</label>
+                <input type="number" id="fpbKpkA">
+            </div>
+            <div class="input-field">
+                <label for="fpbKpkB">Bilangan 2:</label>
+                <input type="number" id="fpbKpkB">
+            </div>
+            <button id="fpbKpkButton">Hitung</button>
+            <textarea id="fpbKpkResult" readonly></textarea>
+        </div>
+
+        <!-- Kalkulator Permutasi dan Kombinasi -->
+        <div class="calculator">
+            <h2>Kalkulator Permutasi dan Kombinasi</h2>
+            <div class="input-field">
+                <label for="permCombN">Masukkan n:</label>
+                <input type="number" id="permCombN">
+            </div>
+            <div class="input-field">
+                <label for="permCombR">Masukkan r:</label>
+                <input type="number" id="permCombR">
+            </div>
+            <button id="permButton">Hitung Permutasi</button>
+            <textarea id="permResult" readonly></textarea>
+            <button id="combButton">Hitung Kombinasi</button>
+            <textarea id="combResult" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
